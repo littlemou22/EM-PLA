@@ -1,1 +1,1 @@
-
+We use the PDBbind dataset (version 2016) as the dataset for the protein-ligand binding affinity prediction task. The official original dataset can be downloaded from http://pdbbind.org.cn/. Then, place the downloaded original dataset in the data directory.
