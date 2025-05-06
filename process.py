@@ -317,10 +317,6 @@ def getComplexEnv(sequence, mol):
     hydropathy_index = analyzer.gravy()
     aromaticity = analyzer.aromaticity()
     charge_at_pH = analyzer.charge_at_pH(7.4)
-    hb_donors = ['K', 'R', 'H', 'S', 'T', 'Y']
-    hb_acceptors = ['E', 'D', 'N', 'Q', 'O']
-    donor_count = sum(1 for aa in protein_seq if aa in hb_donors)
-    acceptor_count = sum(1 for aa in protein_seq if aa in hb_acceptors)
     mol = Chem.MolFromMol2File(mol, removeHs=False)
     if mol is None:
         psa = 0
